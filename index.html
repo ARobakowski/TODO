@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font awesome link for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="task-input">
+        <i class="fa-regular fa-chart-bar"></i>
+        <input type="text" placeholder="Add a new task" id="todo-input" />
+        <button class="fa-solid fa-plus" id="add-btn"></button>
+      </div>
+      <div class="controls">
+        <select name="todos" class="filters">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+        <button class="clear-all" id="clear-all">Clear ALL</button>
+      </div>
+      <ul class="task-list" id="task-list"></ul>
+    </div>
+  </body>
+</html>
