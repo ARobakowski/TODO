@@ -121,3 +121,18 @@ body {
   transform: translateX(6rem);
   opacity: 0;
 }
+
+@media (max-width: 450px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .task-input input {
+    width: 100%;
+    font-size: .8rem;
+  }
+
+  .task-input .fa-plus {
+    margin-left: 1rem;
+  }
+}
